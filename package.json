@@ -1,0 +1,33 @@
+{
+  "name": "medium-headline-generator",
+  "version": "1.0.0",
+  "description": "Coming soon...",
+  "scripts": {
+    "build": "NODE_ENV=production webpack --colors --progress",
+    "start": "npm run build && node server",
+    "watch": "NODE_ENV=development node dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poshaughnessy/medium-headline-generator.git"
+  },
+  "homepage": "https://github.com/poshaughnessy/medium-headline-generator#readme",
+  "engines": {
+    "node": "4"
+  },
+  "author": "Peter O'Shaughnessy",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.3.21",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "express": "^4.13.3",
+    "howler": "^1.1.28",
+    "mo-js": "^0.147.4",
+    "webpack": "^1.12.9"
+  }
+}

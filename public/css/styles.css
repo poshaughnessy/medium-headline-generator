@@ -1,0 +1,59 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+#container {
+  padding: 5px;
+}
+
+#headline {
+  color: #EE4F7E;
+  font-size: 2em;
+  margin: 1em 0 2em 0;
+}
+
+#instructions {
+  font-size: 1.2em;
+}
+
+footer {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  margin-top: 2em;
+}
+
+a {
+  color: #0EA2DC;
+}
+
+a:visited {
+  color: #0EA2DC;
+}
+
+@media (min-width: 600px) {
+
+  #headline {
+    font-size: 3em;
+  }
+
+  #instructions {
+    font-size: 1.3em;
+  }
+
+}
+
+@media (min-height: 800px) {
+
+  #headline {
+    margin: 2em 0;
+  }
+
+}
