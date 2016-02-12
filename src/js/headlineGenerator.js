@@ -5,7 +5,8 @@ import {chooseOneAtRandom} from './utils';
  */
 const HEADLINE_STYLES = {
   FORCED_CULTURAL_REFERENCE: 'FORCED_CULTURAL_REFERENCE',
-  WHY_YOURE_WRONG_ABOUT: 'WHY_YOURE_WRONG_ABOUT'
+  WHY_YOURE_WRONG_ABOUT: 'WHY_YOURE_WRONG_ABOUT',
+  HYPE_HYPE_HYPE: 'HYPE_HYPE_HYPE'
   //AND_WHY_IT_MATTERS: 'AND_WHY_IT_MATTERS'
   //QTWTAIN: 'QTWTAIN',
   //THIS_IS_WHAT_HAPPENS: 'THIS_IS_WHAT_HAPPENS'
@@ -22,7 +23,8 @@ const SHORT_PITHY_QUOTES = [
   'If You Change Nothing, Nothing Will Change',
   'Don\'t Dream Of Success, Work For It',
   'Minimising Risk',
-  'Collaborate Or Die'
+  'Collaborate Or Die',
+  'Feel The Bern'
 ];
 
 const TRENDY_CULTURAL_REFERENES = [
@@ -37,7 +39,13 @@ const TRENDY_CULTURAL_REFERENES = [
   'Justin Bieber',
   'Taylor Swift',
   'Kanye West',
-  'The Gravitational Wave Discovery'
+  'The Gravitational Wave Discovery',
+  'The Presidential Primary',
+  'Valentines Day',
+  'Immigration',
+  'The 4th Industrial Revolution',
+  'Blockchain',
+  'Bernie Sanders'
 ];
 
 const BUSINESS_BUZZ_WORDS = [
@@ -47,7 +55,9 @@ const BUSINESS_BUZZ_WORDS = [
   'Startups',
   'Industry Disruption',
   'Lean Startup',
-  'Agile Software Development'
+  'Agile Software Development',
+  'Digital Transformation',
+  'User Centric Design'
 ];
 
 const CONTENTIOUS_THEMES = [
@@ -56,7 +66,8 @@ const CONTENTIOUS_THEMES = [
   'Google\'s Tax Policy',
   'Silicon Valley Excess',
   'Donald Trump',
-  'The Death of Privacy'
+  'The Death of Privacy',
+  'Remote Working'
 ];
 
 export function generateHeadline() {
@@ -84,6 +95,14 @@ export function generateHeadline() {
       const contentiousTheme = chooseOneAtRandom(CONTENTIOUS_THEMES);
 
       return `Why You're Wrong About ${contentiousTheme}`;
+
+    case HEADLINE_STYLES.HYPE_HYPE_HYPE:
+
+        const trendyCulturalReference1 = chooseOneAtRandom(TRENDY_CULTURAL_REFERENES);
+        const businessBuzzWord2 = chooseOneAtRandom(BUSINESS_BUZZ_WORDS);
+        const randNumber = Math.floor((Math.random() * 20) + 1);
+
+        return `${randNumber} Ways that ${trendyCulturalReference1} is going to change ${businessBuzzWord2}`;
 
   }
 
