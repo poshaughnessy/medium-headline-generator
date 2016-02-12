@@ -1,0 +1,3 @@
+# Medium Headline Generator
+
+Coming soon...
