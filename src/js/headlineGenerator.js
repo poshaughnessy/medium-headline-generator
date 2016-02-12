@@ -21,7 +21,7 @@ const SHORT_PITHY_QUOTES = [
   'To Dare Is To Do',
   'Innovate Or Die',
   'If You Change Nothing, Nothing Will Change',
-  'Don\'t Dream Of Success. Work For It.',
+  'Don\'t Dream Of Success, Work For It',
   'Minimising Risk',
   'Collaborate Or Die'
 ];

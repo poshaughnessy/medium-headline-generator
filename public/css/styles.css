@@ -23,6 +23,18 @@ body {
   font-size: 1.2em;
 }
 
+a {
+  color: #0EA2DC;
+}
+
+a:visited {
+  color: #0EA2DC;
+}
+
+a.pebblecode {
+  color: #EE4F7E;
+}
+
 footer {
   position: absolute;
   bottom: 1em;
@@ -30,12 +42,8 @@ footer {
   margin-top: 2em;
 }
 
-a {
-  color: #0EA2DC;
-}
-
-a:visited {
-  color: #0EA2DC;
+footer .divider {
+  padding: 0 10px;
 }
 
 @media (min-width: 600px) {
