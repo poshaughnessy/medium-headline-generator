@@ -21,7 +21,9 @@ const SHORT_PITHY_QUOTES = [
   'To Dare Is To Do',
   'Innovate Or Die',
   'If You Change Nothing, Nothing Will Change',
-  'Don\'t Dream Of Success. Work For It.'
+  'Don\'t Dream Of Success. Work For It.',
+  'Minimising Risk',
+  'Collaborate Or Die'
 ];
 
 const TRENDY_CULTURAL_REFERENES = [
@@ -32,7 +34,10 @@ const TRENDY_CULTURAL_REFERENES = [
   'Zoolander 2',
   'Star Trek Beyond',
   'The New Indepenedence Day Movie',
-  'The New Jason Bourne Movie'
+  'The New Jason Bourne Movie',
+  'Justin Bieber',
+  'Taylor Swift',
+  'Kanye West'
 ];
 
 const BUSINESS_BUZZ_WORDS = [
@@ -40,7 +45,9 @@ const BUSINESS_BUZZ_WORDS = [
   'Innovation',
   'Leadership',
   'Startups',
-  'Industry Disruption'
+  'Industry Disruption',
+  'Lean Startup',
+  'Agile Software Development'
 ];
 
 export function generateHeadline() {
