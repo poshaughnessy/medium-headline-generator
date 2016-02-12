@@ -5,7 +5,7 @@ import {chooseOneAtRandom} from './utils';
  */
 const HEADLINE_STYLES = {
   FORCED_CULTURAL_REFERENCE: 'FORCED_CULTURAL_REFERENCE',
-  WHY_YOURE_WRONG_ABOUT: 'WHY_YOURE_WRONG_ABOUT'
+  WHY_YOURE_WRONG_ABOUT: 'WHY_YOURE_WRONG_ABOUT',
   //AND_WHY_IT_MATTERS: 'AND_WHY_IT_MATTERS'
   //QTWTAIN: 'QTWTAIN',
   //THIS_IS_WHAT_HAPPENS: 'THIS_IS_WHAT_HAPPENS'
@@ -37,7 +37,10 @@ const TRENDY_CULTURAL_REFERENES = [
   'Justin Bieber',
   'Taylor Swift',
   'Kanye West',
-  'The Gravitational Wave Discovery'
+  'The Gravitational Wave Discovery',
+  'Game Of Thrones',
+  'Kim Kardashian',
+  'Donald Trump'
 ];
 
 const BUSINESS_BUZZ_WORDS = [
@@ -55,8 +58,8 @@ const CONTENTIOUS_THEMES = [
   'The Impending Robot Apocalypse',
   'Google\'s Tax Policy',
   'Silicon Valley Excess',
-  'Donald Trump',
-  'The Death of Privacy'
+  'The Internet of Things',
+  'Self-Driving Cars'
 ];
 
 export function generateHeadline() {
