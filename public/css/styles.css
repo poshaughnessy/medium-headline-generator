@@ -1,26 +1,46 @@
 html {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   text-align: center;
   margin: 0;
+  font-size: 75%;
+  height: 100%;
 }
 
 #container {
-  padding: 5px;
+  padding: 10px;
+  min-height: 100%;
+  box-sizing: border-box;
+  margin-bottom: -100px;
+}
+
+#container:after {
+  content: "";
+  display: block;
+}
+
+#container:after {
+  height: 100px;
 }
 
 #headline {
   color: #EE4F7E;
-  font-size: 2em;
-  margin: 1em 0 2em 0;
+  font-size: 2.5em;
+  margin: 1em 0 1.5em 0;
 }
 
-#instructions {
-  font-size: 1.2em;
+#explanation {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+#what-next {
+  font-size: 1.3em;
 }
 
 a {
@@ -36,24 +56,27 @@ a.pebblecode {
 }
 
 footer {
-  position: absolute;
-  bottom: 1em;
-  width: 100%;
-  margin-top: 2em;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-footer .divider {
-  padding: 0 10px;
+footer p {
+  margin: 0.5em 0;
 }
 
 @media (min-width: 600px) {
 
   #headline {
-    font-size: 3em;
+    font-size: 4em;
   }
 
-  #instructions {
-    font-size: 1.3em;
+  #explanation {
+    font-size: 2em;
+  }
+
+  #what-next {
+    font-size: 1.8em;
   }
 
 }
