@@ -36,15 +36,17 @@ const TRENDY_CULTURAL_REFERENES = [
   'Star Trek Beyond',
   'The New Indepenedence Day Movie',
   'The New Jason Bourne Movie',
-  'Justin Bieber',
-  'Taylor Swift',
-  'Kanye West',
   'The Gravitational Wave Discovery',
   'The Presidential Primary',
   'Valentines Day',
   'Immigration',
   'The 4th Industrial Revolution',
   'Blockchain Technology',
+  'Game Of Thrones',
+  'Justin Bieber',
+  'Taylor Swift',
+  'Kanye West',
+  'Kim Kardashian',
   'Bernie Sanders',
   'Donald Trump'
 ];
@@ -66,8 +68,10 @@ const CONTENTIOUS_THEMES = [
   'The Robot Apocalypse',
   'Google\'s Tax Policy',
   'Silicon Valley Excess',
-  'The Death of Privacy',
-  'Remote Working'
+  'Internet Privacy',
+  'Remote Working',
+  'The Internet of Things',
+  'Self-Driving Cars'
 ];
 
 export function generateHeadline() {
@@ -87,17 +91,17 @@ export function generateHeadline() {
     case HEADLINE_STYLES.YOURE_WRONG_ABOUT:
 
       const trendyCulturalReference2 = chooseOneAtRandom(TRENDY_CULTURAL_REFERENES);
-      const contentiousTheme1 = chooseOneAtRandom(CONTENTIOUS_THEMES);
+      const contentiousTheme2 = chooseOneAtRandom(CONTENTIOUS_THEMES);
 
-      return `Why ${trendyCulturalReference2} Shows You're Wrong About ${contentiousTheme1}`;
+      return `Why ${trendyCulturalReference2} Shows You're Wrong About ${contentiousTheme2}`;
 
     case HEADLINE_STYLES.HYPE_HYPE_HYPE:
 
         const trendyCulturalReference3 = chooseOneAtRandom(TRENDY_CULTURAL_REFERENES);
-        const businessBuzzWord2 = chooseOneAtRandom(BUSINESS_BUZZ_WORDS);
-        const randNumber = Math.floor((Math.random() * 20) + 2);
+        const businessBuzzWord3 = chooseOneAtRandom(BUSINESS_BUZZ_WORDS);
+        const randNumber3 = Math.floor((Math.random() * 20) + 2);
 
-        return `${randNumber} Ways That ${trendyCulturalReference3} Is Going To Change ${businessBuzzWord2}`;
+        return `${randNumber3} Ways That ${trendyCulturalReference3} Is Going To Change ${businessBuzzWord3}`;
 
   }
 
