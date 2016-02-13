@@ -5,7 +5,7 @@ import {chooseOneAtRandom} from './utils';
  */
 const HEADLINE_STYLES = {
   FORCED_CULTURAL_REFERENCE: 'FORCED_CULTURAL_REFERENCE',
-  WHY_YOURE_WRONG_ABOUT: 'WHY_YOURE_WRONG_ABOUT',
+  YOURE_WRONG_ABOUT: 'YOURE_WRONG_ABOUT',
   HYPE_HYPE_HYPE: 'HYPE_HYPE_HYPE'
   //AND_WHY_IT_MATTERS: 'AND_WHY_IT_MATTERS'
   //QTWTAIN: 'QTWTAIN',
@@ -44,8 +44,9 @@ const TRENDY_CULTURAL_REFERENES = [
   'Valentines Day',
   'Immigration',
   'The 4th Industrial Revolution',
-  'Blockchain',
-  'Bernie Sanders'
+  'Blockchain Technology',
+  'Bernie Sanders',
+  'Donald Trump'
 ];
 
 const BUSINESS_BUZZ_WORDS = [
@@ -62,10 +63,9 @@ const BUSINESS_BUZZ_WORDS = [
 
 const CONTENTIOUS_THEMES = [
   'The Death of Twitter',
-  'The Impending Robot Apocalypse',
+  'The Robot Apocalypse',
   'Google\'s Tax Policy',
   'Silicon Valley Excess',
-  'Donald Trump',
   'The Death of Privacy',
   'Remote Working'
 ];
@@ -76,33 +76,28 @@ export function generateHeadline() {
 
   switch (headlineStyle) {
 
-    /**
-     * $shortPithyQuote: What $trendyCulturalReference Teaches Us About $businessBuzzWord
-     */
     case HEADLINE_STYLES.FORCED_CULTURAL_REFERENCE:
 
-      const shortPithyQuote = chooseOneAtRandom(SHORT_PITHY_QUOTES);
-      const trendyCulturalReference = chooseOneAtRandom(TRENDY_CULTURAL_REFERENES);
-      const businessBuzzWord = chooseOneAtRandom(BUSINESS_BUZZ_WORDS);
+      const shortPithyQuote1 = chooseOneAtRandom(SHORT_PITHY_QUOTES);
+      const trendyCulturalReference1 = chooseOneAtRandom(TRENDY_CULTURAL_REFERENES);
+      const businessBuzzWord1 = chooseOneAtRandom(BUSINESS_BUZZ_WORDS);
 
-      return `${shortPithyQuote}: What ${trendyCulturalReference} Teaches Us About ${businessBuzzWord}`;
+      return `${shortPithyQuote1}: What ${trendyCulturalReference1} Teaches Us About ${businessBuzzWord1}`;
 
-    /**
-     * Why You're Wrong About $contentiousTheme
-     */
-    case HEADLINE_STYLES.WHY_YOURE_WRONG_ABOUT:
+    case HEADLINE_STYLES.YOURE_WRONG_ABOUT:
 
-      const contentiousTheme = chooseOneAtRandom(CONTENTIOUS_THEMES);
+      const trendyCulturalReference2 = chooseOneAtRandom(TRENDY_CULTURAL_REFERENES);
+      const contentiousTheme1 = chooseOneAtRandom(CONTENTIOUS_THEMES);
 
-      return `Why You're Wrong About ${contentiousTheme}`;
+      return `Why ${trendyCulturalReference2} Shows You're Wrong About ${contentiousTheme1}`;
 
     case HEADLINE_STYLES.HYPE_HYPE_HYPE:
 
-        const trendyCulturalReference1 = chooseOneAtRandom(TRENDY_CULTURAL_REFERENES);
+        const trendyCulturalReference3 = chooseOneAtRandom(TRENDY_CULTURAL_REFERENES);
         const businessBuzzWord2 = chooseOneAtRandom(BUSINESS_BUZZ_WORDS);
-        const randNumber = Math.floor((Math.random() * 20) + 1);
+        const randNumber = Math.floor((Math.random() * 20) + 2);
 
-        return `${randNumber} Ways that ${trendyCulturalReference1} is going to change ${businessBuzzWord2}`;
+        return `${randNumber} Ways That ${trendyCulturalReference3} Is Going To Change ${businessBuzzWord2}`;
 
   }
 
