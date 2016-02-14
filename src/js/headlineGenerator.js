@@ -34,7 +34,7 @@ const TRENDY_CULTURAL_REFERENES = [
   'Batman v Superman',
   'Zoolander 2',
   'Star Trek Beyond',
-  'The New Indepenedence Day Movie',
+  'The New Independence Day Movie',
   'The New Jason Bourne Movie',
   'The Gravitational Wave Discovery',
   'The Presidential Primary',
