@@ -24,31 +24,27 @@ const SHORT_PITHY_QUOTES = [
   'Don\'t Dream Of Success, Work For It',
   'Minimising Risk',
   'Collaborate Or Die',
-  'Feel The Bern'
+  'Take Back Control',
+  'Make It Great Again'
 ];
 
 const TRENDY_CULTURAL_REFERENES = [
-  'The Martian',
-  'The Big Short',
-  'Deadpool',
-  'Batman v Superman',
-  'Zoolander 2',
-  'Star Trek Beyond',
-  'The New Independence Day Movie',
-  'The New Jason Bourne Movie',
-  'The Gravitational Wave Discovery',
-  'The Presidential Primary',
-  'Valentines Day',
-  'Immigration',
-  'The 4th Industrial Revolution',
+  'Brexit',
+  'The EU Referendum',
+  'The Presidential Election',
+  'The US Election',
+  'Donald Trump',
+  'Hilary Clinton',
+  'Teresa May',
+  'The Loss of Marmite',
   'Blockchain Technology',
   'Game Of Thrones',
   'Justin Bieber',
   'Taylor Swift',
   'Kanye West',
   'Kim Kardashian',
-  'Bernie Sanders',
-  'Donald Trump'
+  '"Bremoaners"',
+  'Gears of War'
 ];
 
 const BUSINESS_BUZZ_WORDS = [
@@ -60,7 +56,8 @@ const BUSINESS_BUZZ_WORDS = [
   'Lean Startup',
   'Agile Software Development',
   'Digital Transformation',
-  'User Centric Design'
+  'User Centric Design',
+  'The Web Platform'
 ];
 
 const CONTENTIOUS_THEMES = [
@@ -71,7 +68,8 @@ const CONTENTIOUS_THEMES = [
   'Internet Privacy',
   'Remote Working',
   'The Internet of Things',
-  'Self-Driving Cars'
+  'Self-Driving Cars',
+  'Web vs Native'
 ];
 
 export function generateHeadline() {
